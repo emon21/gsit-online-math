@@ -37,6 +37,9 @@ Route::middleware('auth')->group(function () {
 // website
 
 Route::get('/',[WebsiteController::class,'index'])->name('index');
+Route::get('/faq',[WebsiteController::class,'faq'])->name('faq');
+Route::get('/search',[WebsiteController::class,'search'])->name('search');
+Route::get('/result',[WebsiteController::class,'result'])->name('result');
 
 //coll back function
 Route::get('/home',function(){

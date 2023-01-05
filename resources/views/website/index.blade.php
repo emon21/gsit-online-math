@@ -1,115 +1,11 @@
 <x-guest-layout>
 
-
-   
-<nav class="bg-blue-400 px-2  py-2.5  fixed w-full z-20 top-0 left-0 border-b border-gray-200 overflow-hidden">
-    
-    <div class="container flex flex-wrap items-center justify-between ">
-   
-    <div class="items-center hidden w-full gap-6 md:flex md:w-auto md:order-1" id="navbar-sticky">
-        {{-- <a href="https://flowbite.com/" class="flex items-center">
-            <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
-            <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Online Demo</span>
-        </a> --}}
-
-
-        <div class="shrink-0 flex items-center">
-            <a href="{{ route('dashboard') }}">
-                {{-- <x-application-logo class="block h-9 w-auto fill-current text-gray-800" /> --}}
-                <img src="{{ asset('/frontend/images/BTEA Olym.png') }}" alt="" class="w-14 h-14">
-            </a>
-        </div>
-
-      <ul class="flex  border border-gray-100 rounded-lg  md:flex-row md:space-x-1 md:mt-0 md:text-sm md:font-medium md:border-0">
-        <li>
-          <a href="#" class="flex gap-1 items-center justify-between  py-2 px-2 text-white hover:bg-blue-700 rounded transition-all duration-300 ease-in-out" aria-current="page">
-            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
-              </svg>
-              </span>
-            Home</a>
-        </li>
-
-        <li>
-          <a href="#" class="flex gap-1 items-center justify-between  py-2 px-2 text-white hover:bg-blue-700 rounded transition-all duration-300 ease-in-out">
-            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
-              </svg>
-              </span>
-            FAQ</a>
-        </li>
-        <li>
-            <a href="#" class="flex gap-1 items-center justify-between  py-2 px-2 text-white hover:bg-blue-700 rounded transition-all duration-300 ease-in-out">
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                      </svg>
-                      
-                  </span>
-                Search</a>
-        </li>
-
-        <li>
-            <a href="#" class="flex gap-1 items-center justify-between  py-2 px-2 text-white hover:bg-blue-700 rounded transition-all duration-300 ease-in-out">
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                      </svg>
-                  </span>
-                Result</a>
-        </li>
-
-        <li>
-            <a href="#" class="flex gap-1 items-center justify-between  py-2 px-2 text-white hover:bg-blue-700 rounded transition-all duration-300 ease-in-out">
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                      </svg>
-                      
-                  </span>
-                Question</a>
-        </li>
-
-        <li>
-            <a href="#" class="flex gap-1 items-center justify-between  py-2 px-2 text-white hover:bg-blue-700 rounded transition-all duration-300 ease-in-out">
-                 <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
-                      </svg>
-                 </span>
-                User</a>
-        </li>
-      </ul>
-    </div>
-
-    <div class="flex gap-2 md:order-2">
-        <a href="#" class="text-white hover:bg-blue-700 border hover:border-none transition duration-300 ease-in-out   focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 flex justify-between items-center gap-1">
-            <span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
-                  </svg> 
-            </span>
-            Login</a>
-
-        <a href="#" class="text-white hover:bg-blue-700 border hover:border-none transition duration-300 ease-in-out   focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 flex justify-between items-center gap-1">
-            <span class="-rotate-45 -mt-1">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
-                  </svg>
-                  
-            </span>
-            নিবন্ধন</a>
-
-        <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
-          <span class="sr-only">Open main menu</span>
-          <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd">
-          </path>
-        </svg>
-      </button>
-    </div>
-    </div>
-  </nav>
+    <x-navbar></x-navbar>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Dashboard ee') }}
+        </h2>
+    </x-slot>
 
  <section class="text-gray-600 body-font bg-green-400  overflow-hidden">
     <div class="container py-24 flex flex-wrap">
@@ -163,15 +59,12 @@
         বঙ্গবন্ধু ট্যুরিজম অলিম্পিয়াড এর তাৎপর্যঃ
       </h1>
       <div class="p-4 w-3/4   text-white mx-auto flex justify-between gap-4">
-        <div class="w-1/2  px-2 py-2 rounded border border-spacing-1 text-justify">
-            <p class="text-black">
+        <div class="w-1/2  px-2 py-2 rounded border border-spacing-1 text-justify hover:shadow transition-all duration-300 ease-in-out hover:scale-105 hover:bg-green-500 cursor-pointer hover:text-white text-black">
+            <p class="">
                 জাতির পিতা বঙ্গবন্ধু ও বাংলাদেশ নামক মানচিত্র সারা পৃথিবীতে একে অপরের পরিপুরক। তাই
                 বঙ্গবন্ধুর প্রতিচ্ছবিকে বলা হয় পর্যটনের লিজেন্ডারি ইমেজ। পর্যটন পৃথিবীর দ্বিতীয় বৃহত্তর শিল্প
                 খাত, পেট্রোলিয়াম ও কেমিকেলের পরেই এর স্থান পৃথিবীর মোট অভ্যন্তরীণ সম্পদের প্রায় ১০%
-                যোগান দেয় এই খাত। বিশ্বে কর্মসংস্থানের ক্ষেত্রে প্রতি ১০ জনে ১জন নিয়োজিত আছেন পর্যটনে
-                এবং মোট সেবা রপ্তানি ৩০% হয় এই খাত থেকে। অথচ বিপুল সম্ভাবনাময় খাত বাংলাদেশের দেশের
-                তরুণদের কাছে অপরিচিত।বলাবাহুল্য আমাদের দেশে &quot;জলাভূমি পর্যটন&quot; &quot;সাংস্কৃতিক পর্যটন&quot;
-                &quot;জীবনধারা পর্যটন&quot; &quot; উৎসব পর্যটন&quot; &quot;ধর্মীয় পর্যটন&quot; &quot;সমুদ্র পর্যটন&quot; &quot;রোমাঞ্চ পর্যটন&quot; ইত্যাদি 
+                যোগান দেয় এই খাত।  
             </p>
             <a href="https://online.matholympiad.org.bd/registration" class=" text-center hover:bg-red-600 p-2 rounded border border-red-600  focus:outline-none text-black hover:text-white flex justify-center transition-all duration-300 ease-in-out mt-2" >
                 <span class="-rotate-45 -mt-1">
@@ -182,43 +75,69 @@
                 </span> নিবন্ধন করুন</a>
     
         </div>
-        <div class="w-1/2 border border-spacing-1 px-2 py-2 rounded ">
-            <p class="text-black text-justify">
-                পর্যটন অনেক দেশি-
-                বিদেশি পর্যটক আকর্ষণ করতে পারে যা আমাদের অর্থনীতিতে ভিন্নমাত্রার সমৃদ্ধি এনে দিবে।
-                এই উদ্দেশ্য সফল করতে হলে পর্যটনের উন্নয়ন বেসরকারি উদ্যোগের সাথে সরকারের সহযোগিতার হাত
-                প্রশস্ত করতে হবে। একইরকম ভাবে ভবিষ্যতের পর্যটনকে অনুভব ও ধারণ করার জন্য তরুণদেরকে এর
-                সাথে যুক্ত করতে হবে।
-                আমরা বিশ্বাস করি বঙ্গবন্ধু ট্যুরিজম অলিম্পিয়াড স্কুল কলেজ মাদ্রাসা ও কারিগরি শিক্ষার সাথে
-                সম্পৃক্ত শিক্ষার্থীদেরকে পর্যটন সম্বন্ধে অবহিত করতে সাহায্য করবে এবং এর সাথে যুক্ত করার
-                মাধ্যমে দেশপ্রেমের নতুন দৃষ্টিভঙ্গি সূচনা হবে ।
+        <div class="w-1/2  px-2 py-2 rounded border border-spacing-1 text-justify hover:shadow transition-all duration-300 ease-in-out hover:scale-105 hover:bg-green-500 cursor-pointer hover:text-white text-black">
+            <p class="">
+                জাতির পিতা বঙ্গবন্ধু ও বাংলাদেশ নামক মানচিত্র সারা পৃথিবীতে একে অপরের পরিপুরক। তাই
+                বঙ্গবন্ধুর প্রতিচ্ছবিকে বলা হয় পর্যটনের লিজেন্ডারি ইমেজ। পর্যটন পৃথিবীর দ্বিতীয় বৃহত্তর শিল্প
+                খাত, পেট্রোলিয়াম ও কেমিকেলের পরেই এর স্থান পৃথিবীর মোট অভ্যন্তরীণ সম্পদের প্রায় ১০%
+                যোগান দেয় এই খাত।
             </p>
         </div>
-        <div class="w-1/2 border border-spacing-1 px-2 py-2 rounded">
-            <h4 class="text-red-600 text-center text-2xl pb-2"> যোগাযোগ</h4>
-            <p class="text-center  text-base text-black">
-               
+        <div class="w-1/2  px-2 py-2 rounded border border-spacing-1 text-center hover:shadow transition-all duration-300 ease-in-out hover:scale-105 hover:bg-green-500 cursor-pointer hover:text-white text-black">
+            <h4 class=" text-center pb-2 text-red-500 text-xl font-bold"> যোগাযোগ</h4>
+            <p class="">
+
                 বঙ্গবন্ধু ট্যুরিজম অলিম্পিয়াড ২০২২ এর জাতীয় কমিটি নিম্নরূপঃ
                 প্রধান পৃষ্ঠপোষক
                 জনাব র. আ. ম. উবায়দুল মোকতাদির চৌধুরী এমপি
             </p>
-        
-        
         </div>
-       
-       
-      </div>
+      </div>      
     </div>
-    
   </section>
 
-  <footer class="bg-green-400 text-center">
-   
-    <div class="text-center text-white p-4" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2022 Copyright : 
-      <a class="text-white" href="#">বঙ্গবন্ধু ট্যুরিজম অলিম্পিয়াড</a>
+  <section class="bg-gray-300  mt-10 p-6">
+    <div class="container">
+        <div class="logo-wrapper flex items-center">
+            <div>
+                <img src="https://online.matholympiad.org.bd/img/bdmoc-logo-bengali.webp" alt="">
+            </div>
+            <div>
+                <img src="https://online.matholympiad.org.bd/img/dutch-bangla-bank-logo.webp" alt="">
+            </div>
+            <div>
+                <img src="https://online.matholympiad.org.bd/img/prothom-alo-logo.webp" alt="">
+            </div>
+        </div>
     </div>
-  </footer>
+  </section>
+
+ 
+  <x-footer></x-footer>
+
+  
+{{-- <footer class="p-4 bg-green-400">
+   
+   <div class="container  flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+    <span class="text-sm text-white underline-0 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">বঙ্গবন্ধু ট্যুরিজম অলিম্পিয়াড™</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+        </li>
+        <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+        </li>
+        <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Contact</a>
+        </li>
+    </ul>
+   </div>
+</footer> --}}
+
 
 </x-guest-layout>
 
