@@ -28,7 +28,6 @@ class AdminSeeder extends Seeder
 
 
         $user = new User();
-        $user->name = "User";
         $user->email = "user@mail.com";
         $user->password = bcrypt('12345678');
         $user->email_verified_at = Carbon::now();

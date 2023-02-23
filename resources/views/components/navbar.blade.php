@@ -1,11 +1,11 @@
- 
+
 <nav class="bg-[#00aeef] px-2  py-2.5  w-full z-20 top-0 left-0 ">
-    
+
     <div class="container flex flex-wrap items-center justify-between ">
 
     <!-- Left Menu Start -->
     <div class="items-center hidden w-full gap-6 md:flex md:w-auto md:order-1" id="navbar-sticky">
-        
+
         {{-- <a href="https://flowbite.com/" class="flex items-center">
             <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
             <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Online Demo</span>
@@ -45,7 +45,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
                       </svg>
-                      
+
                   </span>
                   <label class="pt-1">Search</label></a>
         </li>
@@ -66,7 +66,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
                       </svg>
-                      
+
                   </span>
                   <label class="pt-1">Question</label></a>
         </li>
@@ -94,11 +94,11 @@
          <li>
             <a href="{{ route('target') }}" class="flex gap-1 items-center justify-between  py-2 px-2 text-white hover:bg-blue-700 rounded transition-all duration-300 ease-in-out">
                  <span>
-                    
+
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
                       </svg>
-                                            
+
                  </span>
                  <label class="pt-1">Target
 
@@ -110,22 +110,25 @@
 
     <!-- Right Menu Start -->
     <div class="flex gap-2 md:order-2">
-        <a href="#" class="text-white hover:bg-blue-700 border hover:border-none transition duration-300 ease-in-out   focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 flex justify-between items-center gap-1">
-            <span>
+        <a href="{{route('login') }}" class="text-white hover:bg-blue-700 border hover:border-transparent transition duration-300 ease-in-out
+          focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 flex justify-between items-center gap-1">
+            <span class="pr-1">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
-                  </svg> 
+                  </svg>
             </span>
             Login</a>
-
-        {{-- <a href="#" class="text-white hover:bg-blue-700 border hover:border-none transition duration-300 ease-in-out   focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 flex justify-between items-center gap-1">
+            {{-- mx-auto text-center w-1/2 hover:bg-red-600 p-2 rounded border border-red-600  focus:outline-none text-white flex justify-center --}}
+        <a href="{{route('register') }}" class="text-white bg-red-600 p-2  border border-red-600 hover:border-red-600 hover:bg-transparent transition duration-300 ease-in-out
+        focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 flex justify-between items-center gap-1 ">
             <span class="-rotate-45 -mt-1">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                   </svg>
-                  
+
             </span>
-            নিবন্ধন</a> --}}
+            নিবন্ধন</a>
+
 
         <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-sticky" aria-expanded="false">
           <span class="sr-only">Open main menu</span>

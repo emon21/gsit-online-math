@@ -1,4 +1,6 @@
 <x-guest-layout>
+
+    
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
@@ -8,7 +10,7 @@
         </x-slot>
 
         <!-- Session Status -->
-        <x-auth-session-status class="mb-4" :status="session('status')" />
+        <x-auth-session-status class="" :status="session('status')" />
 
         <form method="POST" action="{{ route('admin.login.store') }}">
             @csrf
