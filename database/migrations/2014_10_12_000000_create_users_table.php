@@ -26,11 +26,12 @@ return new class extends Migration
             $table->string('division_name')->nullable();
             $table->string('district_name')->nullable();
             $table->string('upazila_name')->nullable();
+            $table->string('name')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
-            $table->string('photo')->nullable();
+            $table->string('photo')->default('default.png');
             $table->timestamps();
         });
     }

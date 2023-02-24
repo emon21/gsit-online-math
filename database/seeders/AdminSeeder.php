@@ -32,6 +32,7 @@ class AdminSeeder extends Seeder
         $user->password = bcrypt('12345678');
         $user->email_verified_at = Carbon::now();
         $user->remember_token = Str::random(10);
+        $user->photo = "default.png";
         $user->save();
     }
 }
