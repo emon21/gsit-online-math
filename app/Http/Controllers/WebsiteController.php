@@ -13,8 +13,8 @@ class WebsiteController extends Controller
 
     public function index()
     {
-        // return view('website.index');
-        return view('welcome');
+        return view('website.index');
+        // return view('welcome');
     }
 
     public function faq()
