@@ -22,11 +22,12 @@ module.exports = {
                 sm: '600px',
                 md: '728px',
                 lg: '920px',
-                xl: '1140px',
-              
+                xl: '1320px',
+                // '2xl': '1920px'
+
             },
         } ,
-        
+
         listStyleType: {
             none: 'none',
             disc: 'disc',
@@ -34,7 +35,7 @@ module.exports = {
             square: 'square',
             roman: 'upper-roman',
           }
-        
+
     },
 
     plugins: [require('@tailwindcss/forms')],

@@ -21,10 +21,10 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-       
+
 
         $this->call([
-           
+
              faqSeeder::class,
              OurTargetSeeder::class,
              OrganizMemberSeeder::class,
@@ -33,8 +33,8 @@ class DatabaseSeeder extends Seeder
 
              //admin
              AdminSeeder::class,
-            
- 
+
+
          ]);
     }
 }
