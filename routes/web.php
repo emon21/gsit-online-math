@@ -54,7 +54,6 @@ Route::get('/target',[WebsiteController::class,'target'])->name('target');
 Route::get('about',[about::class,'index'])->name('about');
 
 
-
 /*
 |--------------------------------------------------------------------------
 | Admin Routes
@@ -66,11 +65,9 @@ Route::get('/admin/login', [AuthenticatedSessionController::class, 'create'])->n
 Route::post('/admin/login/store', [AuthenticatedSessionController::class, 'store'])->name('admin.login.store');
 
 Route::group(['middleware' => 'admin'], function() {
-
     Route::get('/admin', [HomeController::class, 'index'])->name('admin.dashboard');
-
     Route::post('/admin/logout', [AuthenticatedSessionController::class, 'destroy'])->name('admin.logout');
-
+    Route::get('admin/about',[about::class,'index'])->name('admin/about');
 });
 
 
