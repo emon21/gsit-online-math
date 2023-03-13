@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
+        <title>@yield('title')</title>
         <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Fonts -->
@@ -37,16 +38,13 @@
                 {{-- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur perspiciatis ad unde, distinctio voluptate eos expedita voluptatem tenetur consectetur laudantium, ipsa ex eaque aliquam alias! Error corporis inventore amet quia! --}}
                 {{-- @yield('left-menu') --}}
 
-
-                 @include('admin.layouts.left-menu')
+                 @include('./layouts/left-menu')
 
                  @yield('content')
 
 
             </div>
             <!-- Page Content End-->
-
-
 
                 {{-- left side --}}
 
