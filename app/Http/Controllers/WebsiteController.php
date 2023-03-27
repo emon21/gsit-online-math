@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
 use Spatie\FlareClient\View;
-use App\Models\About_us;
 use App\Models\AboutUS;
+use App\Models\board_of_adviser;
+use App\Models\board_of_director;
+use App\Models\OrganizMember;
 
 class WebsiteController extends Controller
 {
@@ -13,6 +16,7 @@ class WebsiteController extends Controller
 
     public function index()
     {
+
         return view('website.index');
         // return view('welcome');
     }
@@ -34,10 +38,14 @@ class WebsiteController extends Controller
         return view('website.result');
     }
 
-    public function about()
+    public function aboutUs()
     {
-        $about_us = AboutUS::all();
-        return view('website.about',compact('about_us'));
+        $about_us = AboutUS::first();
+        $OrganizMember = OrganizMember::all();
+        $board_of_director = board_of_director::all();
+        $board_of_adviser = board_of_adviser::all();
+        //  return $adviser_list;
+        return view('website.about',compact('about_us','OrganizMember','board_of_director','board_of_adviser'));
     }
 
     public function target()

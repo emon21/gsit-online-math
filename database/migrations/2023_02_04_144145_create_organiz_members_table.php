@@ -16,9 +16,10 @@ return new class extends Migration
         Schema::create('organiz_members', function (Blueprint $table) {
             $table->id();
             $table->string('organiz_name')->nullable();
-            $table->string('organiz_dezation')->nullable();
-            $table->text('organiz_desc')->nullable();
-            $table->text('organiz_picture')->default('default.jpg');
+            $table->string('organiz_desination')->nullable();
+            $table->string('desination_title')->nullable();
+            $table->text('work')->nullable();
+            $table->text('organiz_picture')->nullable();
             $table->timestamps();
         });
     }

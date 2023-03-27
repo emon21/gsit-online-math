@@ -13,11 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('our_targets', function (Blueprint $table) {
+        Schema::create('board_of_advisers', function (Blueprint $table) {
             $table->id();
-            $table->text('our_mission')->nullable();
-            $table->text('our_vision')->nullable();
-            $table->text('our_goal')->nullable();
+            $table->string('name');
+            $table->string('desination');
+            $table->string('work');
+            $table->string('our_dauty')->nullable();
+            $table->string('img_upload')->nullable();
+            $table->string('section_type')->default('top');
             $table->timestamps();
         });
     }
@@ -29,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('our_targets');
+        Schema::dropIfExists('board_of_advisers');
     }
 };

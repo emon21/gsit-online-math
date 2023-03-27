@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class board_of_director extends Model
 {
     use HasFactory;
+
+    protected $guarded = [];
 }

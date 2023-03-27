@@ -1,28 +1,29 @@
 <x-guest-layout>
 
     <x-navbar></x-navbar>
+
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
             {{ __('Dashboard ee') }}
         </h2>
     </x-slot>
 
- <section class="text-gray-600 body-font bg-[#00aeef]  overflow-hidden">
+ <section class="text-gray-600 body-font  overflow-hidden">
     <div class="container py-24 flex flex-wrap">
       <div class="flex flex-wrap items-center -m-4 ">
 
         <div class="p-4 lg:w-1/2 md:w-full">
             <div class="rounded-lg border-gray-200 border-opacity-50 p-8 ">
-                <img src="{{asset('frontend/images/BTEA Olym.png')}} 
+                <img src="{{asset('frontend/images/BTEA Olym.png')}}
                 " alt="">
-              
+
             </div>
           </div>
 
 
         <div class="p-4 lg:w-1/2 md:w-full">
-          <div class="rounded-lg border-gray-200 border-opacity-50 p-8 text-white">
-           
+          <div class="rounded-lg border-gray-200 border-opacity-50 p-8 text-[#00aeef]">
+
             <h2 class="text-2xl pb-6 text-center">বঙ্গবন্ধু ট্যুরিজম অলিম্পিয়াড ২০২২ <br/>
                 সফল করার তাৎপর্যঃ </h2>
            <p class="text-justify mb-5">
@@ -37,14 +38,14 @@
             অর্থনীতিতে বিপুল পরিমাণ পরিবর্তন আসবে। শুধু তাই নয় রাজনীতিতেও একটা পজেটিভ দিক সুচিত
             হবে বলে আমরা বিশ্বাস করি। যার সুফল ২০২৪ সালে জাতীয় রাজনীতিতে পড়বে।
            </p>
-           
 
-           <a href="#" class="mx-auto text-center w-1/2 hover:bg-red-600 p-2 rounded border border-red-600  focus:outline-none text-white flex justify-center" >
+
+           <a href="{{route('register') }}" class="mx-auto text-center w-1/2 hover:bg-red-600 p-2 rounded border border-red-600  focus:outline-none text-black hover:text-white flex justify-center" >
             <span class="-rotate-45 -mt-1">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                   </svg>
-                  
+
             </span> নিবন্ধন করুন</a>
           </div>
         </div>
@@ -63,16 +64,16 @@
                 জাতির পিতা বঙ্গবন্ধু ও বাংলাদেশ নামক মানচিত্র সারা পৃথিবীতে একে অপরের পরিপুরক। তাই
                 বঙ্গবন্ধুর প্রতিচ্ছবিকে বলা হয় পর্যটনের লিজেন্ডারি ইমেজ। পর্যটন পৃথিবীর দ্বিতীয় বৃহত্তর শিল্প
                 খাত, পেট্রোলিয়াম ও কেমিকেলের পরেই এর স্থান পৃথিবীর মোট অভ্যন্তরীণ সম্পদের প্রায় ১০%
-                যোগান দেয় এই খাত।  
+                যোগান দেয় এই খাত।
             </p>
-            <a href="https://online.matholympiad.org.bd/registration" class=" text-center hover:bg-red-600 p-2 rounded border border-red-600  focus:outline-none text-black hover:text-white flex justify-center transition-all duration-300 ease-in-out mt-2" >
+            <a href="{{route('register') }}" class=" text-center hover:bg-red-600 p-2 rounded border border-red-600  focus:outline-none text-black hover:text-white flex justify-center transition-all duration-300 ease-in-out mt-2" >
                 <span class="-rotate-45 -mt-1">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5" />
                       </svg>
-                      
+
                 </span> নিবন্ধন করুন</a>
-    
+
         </div>
         <div class="w-1/2  px-2 py-2 rounded border border-spacing-1 text-justify hover:shadow transition-all duration-300 ease-in-out hover:scale-105 hover:bg-[#00aeef] cursor-pointer hover:text-white text-black">
             <p class="">
@@ -91,7 +92,7 @@
                 জনাব র. আ. ম. উবায়দুল মোকতাদির চৌধুরী এমপি
             </p>
         </div>
-      </div>      
+      </div>
     </div>
   </section>
 

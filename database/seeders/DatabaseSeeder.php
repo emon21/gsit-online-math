@@ -30,6 +30,7 @@ class DatabaseSeeder extends Seeder
              OrganizMemberSeeder::class,
              BoardOfDirectorSeeder::class,
              AboutUSSeeder::class,
+             BoardOfAdviserSeeder::class,
 
              //admin
              AdminSeeder::class,

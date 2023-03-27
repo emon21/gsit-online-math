@@ -126,14 +126,15 @@
         <!-- <a href="{{asset('backend')}}/#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"> -->
         <a href="{{asset('backend')}}/#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
         <img src="{{asset('backend')}}/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-        <span class="hidden-xs">Alexander Pierce</span>
+        <span class="hidden-xs">Hi,{{ Auth::guard('admin')->user()->name }}</span>
         </a>
         <ul class="dropdown-menu bg-primary">
 
         <li class="user-header">
         <img src="{{asset('backend')}}/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
         <p>
-        Alexander Pierce - Web Developer
+
+            {{ Auth::guard('admin')->user()->name }} - Web Developer
         <small>Member since Nov. 2012</small>
         </p>
         </li>
@@ -157,9 +158,9 @@
         <a href="{{asset('backend')}}/#" class="btn btn-dark btn-flat">Profile</a>
         </div>
         <div class="float-right">
-            <form method="POST" action="{{ route('logout') }}">
+            <form method="POST" action="{{ route('admin.logout') }}">
                 @csrf
-        <a href="{{route('logout')}}"  onclick="event.preventDefault();
+        <a href="{{route('admin.logout')}}"  onclick="event.preventDefault();
         this.closest('form').submit();" class="btn btn-outline-danger btn-flat">{{ __('Log Out') }}</a>
           </form>
         </div>

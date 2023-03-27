@@ -19,6 +19,7 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
+        //Admin
         $admin = new Admin();
         $admin->name = 'Admin';
         $admin->email = 'admin@admin.com';
@@ -27,6 +28,7 @@ class AdminSeeder extends Seeder
         $admin->save();
 
 
+        //User
         $user = new User();
         $user->email = "user@mail.com";
         $user->password = bcrypt('12345678');

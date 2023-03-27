@@ -12,7 +12,7 @@
              <img src="{{asset('backend')}}/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
           </div>
           <div class="info">
-             <a href="{{asset('backend')}}/#" class="d-block">Alexander Pierce</a>
+             <a href="{{asset('backend')}}/#" class="d-block">Hi,{{ Auth::guard('admin')->user()->name }}</a>
           </div>
        </div>
        <!-- Sidebar Menu -->
@@ -20,9 +20,9 @@
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
              <!-- Add icons to the links using the .nav-icon class
                 with font-awesome or any other icon font library -->
-             <li class="nav-item menu-open">
-                <a href="{{url('admin')}}" class="nav-link active">
-                Dashboard</a>
+             <li class="nav-item">
+                <a href="{{url('admin')}}" class="nav-link {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
+                    <i class="nav-icon fas fa-home"></i> Dashboard</a>
              </li>
              <li class="nav-item">
                 <a href="{{asset('backend')}}/#" class="nav-link">
@@ -41,13 +41,33 @@
                       </a>
                    </li>
                    <li class="nav-item">
-                      <a href="{{asset('backend')}}/pages/layout/top-nav-sidebar.html" class="nav-link">
+                      <a href="{{route('admin.demo')}}" class="nav-link">
                          <i class="far fa-circle nav-icon"></i>
-                         <p>Top Navigation + Sidebar</p>
+                         <p>Demo</p>
                       </a>
                    </li>
+
                 </ul>
              </li>
+             <li class="nav-item">
+                <a href="{{route('admin.demo')}}" class="nav-link {{ request()->routeIs('admin.demo') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-link"></i>
+                {{__('Demo')}}</a>
+             </li>
+
+             <li class="nav-item">
+                <a href="{{route('admin.about')}}" class="nav-link {{ request()->routeIs('admin.about') ? 'active' : '' }}">
+                    <i class="nav-icon fas fa-link"></i>
+                   <p>About</p>
+                </a>
+             </li>
+             {{-- <li class="nav-item">
+                <a href="{{route('admin.adviser')}}" class="nav-link {{ request()->routeIs('admin.adviser') ? 'active' : '' }}">
+                    <i class="nav-icon fas fa-link"></i>
+                   <p>Adviser</p>
+                </a>
+             </li> --}}
+
              <li class="nav-item">
                 <a href="{{url('/')}}" target="_blank" class="nav-link">
                 <i class="nav-icon fas fa-globe"></i>

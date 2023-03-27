@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('desination');
             $table->string('work');
+            $table->string('img_upload')->nullable();
             $table->timestamps();
         });
     }

@@ -16,8 +16,9 @@ class OurTargetSeeder extends Seeder
     public function run()
     {
         $ourTarget = [
-            'target_name' => 'our mission',
-            'target_desc' => 'our mission',
+            'our_mission' => 'Our Mission is to perform and deliver knowledge about Tourism which was the Biggest DreamBangabandhuSheikh Mujibur Rahman. In that way young generation can learn about BangabandhuSheikh Mujibur Rahman and tourism and sports sector in Bangladesh.',
+            'our_vision' => 'Our vision is tocreate innovators and leaders and in the concepts of Bangladesh tourism and sports for Bangladeshi nation.',
+            'our_goal' => 'By Traveling whole Bangladesh we can let young students/generation know about tourism, sports and Bangabandhu – The Great Philosopher, Nature Lover and Tourist Champion will glorify Tourism in Bangladesh as “Father of Tourism Industry”.',
         ];
 
         ourTarget::insert($ourTarget);
